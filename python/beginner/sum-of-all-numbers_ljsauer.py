@@ -6,14 +6,14 @@ the numbers between them.
 
 import random
 
-lst = [random.randint(0,9) for i in range(2)]
+lst_1 = [random.randint(0,9) for i in range(2)]  #importing random genarated numbers to a list call lst_1
 
-def sum_all(lst):
+def sum_all(lst_1):  #define the sum_all function 
     sum_nums = 0
     lst.sort()
     
-    for num in range(lst[0], lst[1]+1):
+    for num in range(lst_1[0], lst_1[1]+1):
             sum_nums += num
 
-    print(lst)
+    print(lst_1) 
     return sum_nums
